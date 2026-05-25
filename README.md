@@ -1,6 +1,6 @@
 # 🚀 PS5 12.40 Jailbreak Workflow & Stability Guide
 
-This guide outlines a professional workflow for PS5 firmware **12.40** users. It focuses on replacing legacy methods with a **faster** way to reach the kernel exploit using the **Y2JB/P2JB** framework for a smoother, high-performance experience.
+This guide outlines a professional workflow for PS5 firmware **12.40** users. It focuses on replacing legacy methods with a **faster** way to reach the kernel exploit using the **Y2JB/P2JB** framework – it's not necessarily smoother overall, but significantly faster to get kernel access. **You do not need to restore your console or factory reset to use Y2JB – the setup is done via FTP while already jailbroken.**
 
 ---
 
@@ -14,9 +14,10 @@ This guide outlines a professional workflow for PS5 firmware **12.40** users. It
 2. **Block Updates:** Navigate to **Settings > Network > Settings > Set Up Internet Connection**. Choose your connection, select **Manual** DNS settings, and set the Primary DNS to 127.0.0.2 (leave secondary blank) to block Sony's update servers.
 3. **Permanent Patch:** While your SWRR jailbreak is active, send `bdj_unpatch.elf` to **port 9021**. This permanently unpatches the Blu-ray drive, meaning you never have to repeat this specific step.
 4. **FTP Swap:** Use an FTP client to navigate to `/user/download/PPSA01650/` and replace the existing `download0.dat` with the Y2JB version.
-5. **⚠️ WARNING - "Corrupted Data":** After restarting, your PS5 may trigger a "Files are corrupted" system notification.
+   > **⚠️ IMPORTANT: Do NOT open the YouTube app at any point before completing this FTP swap.** Opening YouTube prematurely may trigger an update or corrupt the exploit files. Only launch YouTube after you have finished all Phase 0 steps and restarted your console.
+5. **⚠️ WARNING - "Files are corrupted" Notification:** After restarting, your PS5 may display a "Files are corrupted" system notification.
    - **Do not panic.** This is a common side effect of modifying app data.
-   - **The Fix:** Simply restart your console; the system will refresh the database and the notification will disappear.
+   - **The Fix:** Unfortunately, the only way to clear this error is to **restart your console**; the system will refresh the database and the notification will disappear.
    - **Be Careful:** Always ensure the YouTube app is **completely closed** before moving files to avoid actual system database corruption.
 
 ---
@@ -28,6 +29,8 @@ This guide outlines a professional workflow for PS5 firmware **12.40** users. It
 Once you restart, your legacy SWRR jailbreak will be cleared. Because you have already unpatched the drive and updated the `download0.dat` file, you now have a Y2JB-ready host that triggers the jailbreak for your 12.40 firmware environment.
 
 #### Step 2: Executing Y2JB (The Kernel Exploit)
+
+> **⚠️ Important note on stability:** While Y2JB is much faster for reaching kernel access, sending large ELF files (such as `elfarsenal.elf`) directly through the YouTube app often causes a **kernel panic**. This guide solves that by using the disc‑bridge method in Step 3 – you only use YouTube to trigger the kernel exploit, then shift to the BD‑J disc for payload delivery.
 
 1. **Prepare:** Remove all USB storage devices (controllers can stay connected wirelessly).
 2. **Load:** Open the YouTube app. **Do not touch anything.** Let the app quiet down for 60 seconds.
