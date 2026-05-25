@@ -4,6 +4,11 @@ This guide provides a robust path for firmware **12.40** users to achieve a stab
 
 ---
 
+---
+### ⚠️ Critical Note for Firmware 12.40 Users
+While you can unpatch the Blu-ray drive to improve payload loading stability, **you will still need to perform the initial P2JB exploit after each full reboot.** The "instant" disc-based re-jailbreak (which relies on the `poopsploit` kernel exploit) is currently limited to Firmware 12.00 and below. Always prioritize using **Rest Mode** to keep your jailbreak state active and avoid the long boot-time exploit loop.
+---
+
 ### 🛠️ Phase 0: Migrating from SWRR to Y2JB
 
 If you currently rely on SWRR, you should transition to the **Y2JB** environment to utilize faster boot times and the **P2JB 2.4** stability improvements.
@@ -55,3 +60,17 @@ If you currently rely on SWRR, you should transition to the **Y2JB** environment
 * **Recovery:** If you lose the jailbreak, your drive **remains unpatched**. You can immediately run **Y2JB**, close YouTube, insert the disc, and be back in action in under two minutes.
 
 > **💡 Pro Tip:** Once your games are running, use **Rest Mode**. It preserves the kernel state, allowing you to resume playing instantly!
+
+---
+
+### 🔗 Project Links & Credits
+
+| Tool | Source Repository |
+| :--- | :--- |
+| **Y2JB (Core)** | [https://github.com/matem6/P2JB-Y2JB-Porting](https://github.com/matem6/P2JB-Y2JB-Porting) |
+| **P2JB/Unpatch** | [https://github.com/owendswang/Y2JB-P2JB-bdj_unpatch](https://github.com/owendswang/Y2JB-P2JB-bdj_unpatch) |
+| **Luac0re (Payloads)** | [https://github.com/Gezine/Luac0re](https://github.com/Gezine/Luac0re) |
+| **ELF Arsenal** | [https://git.etawen.dev/soniciso/elf-arsenal](https://git.etawen.dev/soniciso/elf-arsenal) |
+
+### 🙏 Acknowledgments
+Huge thanks to **Gezine**, **matem6**, **owendswang**, and **etawen** for their foundational work and continuous updates to the PS5 scene.
