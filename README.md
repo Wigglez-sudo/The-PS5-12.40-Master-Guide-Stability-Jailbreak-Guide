@@ -1,3 +1,112 @@
+⚠️ IMPORTANT REALITY CHECK BEFORE STARTING
+
+🔓 Current State of Y2JB on PS5 12.40
+
+Y2JB is an impressive and important development for the PS5 scene, however on firmware 12.40 it is still highly experimental and unstable.
+
+This guide exists because many users already have:
+
+* ✅ SWRR installed
+* ✅ A working P2JB workflow
+* ✅ Kernel exploit knowledge
+* ✅ Existing jailbreak setups
+
+Y2JB can sometimes provide a more convenient workflow once configured correctly, especially combined with BD-UN-JB, but users MUST understand the current limitations before proceeding.
+
+⸻
+
+⚠️ WARNING — EXPECT INSTABILITY
+
+On 12.40, Y2JB may cause:
+
+* 💥 Frequent kernel panics
+* 💥 Console crashes
+* 📺 YouTube corruption
+* 🛠️ Database rebuild prompts
+* 👻 Ghost icons
+* 🗄️ appinfo.db corruption
+* ❌ Failed launches
+* 🔁 One-attempt-per-boot behaviour
+* 🎲 Random success/failure rates
+
+Even after successful setup:
+
+* launching YouTube may still fail
+* closing YouTube may break the exploit chain
+* the console may panic unexpectedly
+* stability varies heavily between systems
+
+This is currently normal behaviour for many users.
+
+⸻
+
+🚫 THIS IS NOT A PERFECT DAILY DRIVER
+
+Although Y2JB can work, after extensive testing I personally still consider:
+
+✅ SWRR + P2JB
+
+to be the more stable and reliable overall workflow on 12.40.
+
+Y2JB is currently best viewed as:
+
+* 🧪 An experimental convenience method
+* ⚙️ An alternative launcher workflow
+* 🔬 A research/development-stage setup
+
+—not a guaranteed stable replacement for SWRR.
+
+⸻
+
+👤 WHO THIS GUIDE IS FOR
+
+This guide is mainly intended for users who:
+
+* already understand PS5 jailbreak basics
+* already have SWRR working
+* already understand kernel panic risks
+* are comfortable recovering from crashes
+* want to experiment with Y2JB anyway
+
+If you want maximum stability:
+
+* ✅ Remain on SWRR
+* ✅ Use BD-UN-JB after jailbreak
+* ✅ Minimise database modifications
+
+⸻
+
+⭐ MY CURRENT PERSONAL RECOMMENDATION
+
+After extensive testing on 12.40, my recommended stable workflow is currently:
+
+* 🎮 SWRR
+* 🔓 P2JB
+* 💿 BD-UN-JB
+* 📂 ELF Loader
+* ⚡ Kstuff Lite
+* 🗄️ Minimal app database editing
+
+This setup has proven significantly more reliable for daily usage compared to full Y2JB dependency.
+
+⸻
+
+📌 BEFORE YOU CONTINUE
+
+You should:
+
+* ⚠️ Fully understand the risks
+* ⚠️ Expect crashes
+* ⚠️ Expect kernel panics
+* 💾 Backup important files if possible
+* 🛑 Avoid repeatedly forcing failed attempts
+* 📉 Understand that success rates vary between consoles
+
+Proceed at your own risk
+
+---
+
+
 # 🚀 PS5 12.40 Jailbreak Workflow & Stability Guide
 
 This guide outlines a professional workflow for PS5 firmware **12.40** users. It focuses on replacing legacy methods with a **faster** way to reach the kernel exploit using the **Y2JB/P2JB** framework – it's not necessarily smoother overall, but significantly faster to get kernel access. **You do not need to restore your console or factory reset to use Y2JB – the setup is done via FTP while already jailbroken.**
